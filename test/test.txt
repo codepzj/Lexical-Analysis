@@ -1,0 +1,11 @@
+if else switch case default do while for 
+011 022 0x18 0x77 12 2e3 4e+8 2e-3
+// /* abc */ 
+ab sasa sasa dsdsdf dsf_hsfd354
+> >> >=
+< << <=
+= == !=
+* *=
+- -= -- ->
++ ++ += +
+( )
