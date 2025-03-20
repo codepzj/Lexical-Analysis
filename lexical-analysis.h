@@ -47,6 +47,7 @@ enum TokenID
     RBRACKET, // )
     SEMICOLON, // ;
     ENDINPUT, // 结束输入
+    UNKNOWN // 未知
 };
 
 struct TokenStru

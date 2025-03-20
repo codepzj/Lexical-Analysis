@@ -256,6 +256,26 @@ void GetToken()
             token.op[0] = buffer[pos];
             token.op[1] = '\0';
             break;
+        case '[':
+            token.ID = LBRACKET;
+            token.op[0] = buffer[pos];
+            token.op[1] = '\0';
+            break;
+        case ']':
+            token.ID = RBRACKET;
+            token.op[0] = buffer[pos];
+            token.op[1] = '\0';
+            break;
+        case '{':
+            token.ID = LBRACKET;
+            token.op[0] = buffer[pos];
+            token.op[1] = '\0';
+            break;
+        case '}':
+            token.ID = RBRACKET;
+            token.op[0] = buffer[pos];
+            token.op[1] = '\0';
+            break;
         case ';':
             token.ID = SEMICOLON;
             token.op[0] = buffer[pos];
@@ -376,6 +396,11 @@ QString parseSentense(QString fileContent)
             result += "Word " + string(token.word) + "\n";
         else
             result += "Operator " + string(token.op) + "\n";
+        // 清空token.ID
+        token.ID = UNKNOWN;
+        token.val = 0;
+        token.word[0] = '\0';
+        token.op[0] = '\0';
         GetToken();
     }
 
